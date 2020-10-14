@@ -12,9 +12,9 @@ cache:
 install:
   - npm install -g yarn
 script:
-  - "yarn run lint"
-  - "yarn build"
-  - "mv build/index.html build/404.html"
+  - npm run lint
+  - npm run build
+  - mv build/index.html build/404.html
 deploy:
   provider: pages
   skip_cleanup: true
