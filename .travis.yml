@@ -10,7 +10,6 @@ cache:
 
 
 install:
-  - npm install
   - npm install -g yarn
 script:
  # - yarn lint
