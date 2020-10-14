@@ -11,8 +11,7 @@ cache:
   - node_modules
 
 install:
-  - npm install -g yarn
-  
+  - npm install -g yarn  
 script:
   - yarn lint
   - yarn build
