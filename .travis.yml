@@ -10,10 +10,11 @@ cache:
 
 
 install:
+#add this
   - npm install
   - npm install -g yarn
 script:
- # - yarn lint
+ # - yarn lint comment out this
   - yarn build
   - mv build/index.html build/404.html
 deploy:
