@@ -1,6 +1,21 @@
+
 language: node_js
 node_js:
   - "stable"
+branches:
+  only:
+  - master
+cache:
+  directories:
+  - node_modules
+
+
+install:
+  - npm install -g yarn
+script:
+  - yarn lint
+  - yarn build
+  - mv build/index.html build/404.html
 deploy:
   provider: pages
   skip_cleanup: true
@@ -8,3 +23,4 @@ deploy:
   local_dir: build
   on:
     branch: master
+
