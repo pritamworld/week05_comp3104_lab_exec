@@ -12,6 +12,7 @@ cache:
 install:
   - npm install -g yarn
 script:
+  - yarn lint
   - yarn build
 deploy:
   provider: pages
