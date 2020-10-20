@@ -1,12 +1,40 @@
 {
-  "name": "week05_comp3104_lab_SPA_exec",
+  "name": "week05_comp3104_lab_spa_exec",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\""
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d build",
+    "test": "echo \"Warning: No tests created yet.\"",
+    "eject": "react-scripts eject"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "gh-pages": "^2.0.1",
+    "react": "^16.8.3",
+    "react-dom": "^16.8.3",
+    "react-scripts": "2.1.5",
+    "travis": "^0.1.1",
+    "yarn": "^1.22.10"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KevinUfkes/week05_comp3104_lab_exec.git"
+  },
+  "bugs": {
+    "url": "https://github.com/KevinUfkes/week05_comp3104_lab_exec/issues"
+  },
+  "homepage": "https://github.com/KevinUfkes/week05_comp3104_lab_exec#readme",
+  "description": "",
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }
